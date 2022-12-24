@@ -13,4 +13,8 @@ source "amazon-ebs" "ubuntu" {
   }
 
   ssh_username = "ubuntu"
+
+  tags = {
+    Name = "jawn-packer-builder"
+  }
 }
