@@ -6,6 +6,10 @@ build {
     ami_name = "jawn-packer-nginx"
   }
 
+  provisioner "shell-local" {
+    inline = ["echo shell-local"]
+  }
+
   provisioner "shell" {
     inline = [
       "sudo apt-get update",
